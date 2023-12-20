@@ -1,0 +1,89 @@
+:root{
+    --Tomato: hsl(4, 100%, 67%);
+    --Dark-Slate-Grey: hsl(234, 29%, 20%);
+    --Charcoal-Grey: hsl(235, 18%, 26%);
+    --Grey: hsl(231, 7%, 60%);
+    --White: hsl(0, 0%, 100%);
+}
+ 
+ 
+*{
+
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   font-family: 'Roboto', sans-serif;
+}
+
+body{
+    background-color: var(--Dark-Slate-Grey);
+    min-height: 80vh;
+    width: 100%;
+    display: grid;
+    place-content: center;
+}
+
+.content{
+    max-width: 400px;
+    width: 100%;    
+    border: 1px solid transparent;
+    padding: 2rem;
+    background-color: var(--White);
+    border-radius: 1.5rem;
+    display: grid;
+    gap: 1.5rem;
+}
+
+.content h1{
+    color: var(--Dark-Slate-Grey);
+    font-size: 3rem;
+    line-height: 3rem;
+}
+
+.content p{
+    color: var(--Dark-Slate-Grey);
+    font-size: 1rem;
+}
+
+button{
+    padding: 1rem;
+    border-radius: 0.4rem;
+    border: 1px solid transparent;
+    background-color: var(--Dark-Slate-Grey);
+    color: var(--White);
+}
+
+button:hover{
+    background-color: var(--Tomato);
+    transform: scale(1.03);
+}
+
+button:active{
+    transform: scale(.98);
+}
+
+
+@media only screen and (max-width: 800px) {
+    body{
+        width: 100%;
+        background-color: var(--White);
+        outline: none;
+    }
+
+    .content{
+        max-width: 300px;
+        width: 100%;
+        padding: 0;
+        border-radius: 0;
+        gap: 2rem;
+    }
+
+    .content h1{
+        font-size: 2rem;
+        line-height: 2rem;
+    }
+
+    button{
+        margin-top: 200px;
+    }
+}
